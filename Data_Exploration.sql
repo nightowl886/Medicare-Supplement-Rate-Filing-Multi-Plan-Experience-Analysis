@@ -22,4 +22,5 @@ SELECT
     round((loss_claims::Numeric / incurred_premium)*100,2)  || '%' AS loss_ratio,
     Incurred_premium / lives AS premium_per_life,
     Loss_claims / lives AS claims_per_life
-FROM "medi_supplement".medi_suppl;
+FROM 
+	"medi_supplement".medi_suppl;
